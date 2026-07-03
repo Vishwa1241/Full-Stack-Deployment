@@ -1,0 +1,11 @@
+{
+  "name": "contact-sheet",
+  "version": "1.0.0",
+  "description": "Contact Sheet — a modular, dependency-free vanilla JS product catalog with client-side routing.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 5173",
+    "start": "python3 -m http.server 5173"
+  }
+}

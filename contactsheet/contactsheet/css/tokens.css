@@ -1,0 +1,60 @@
+/*
+  CONTACT SHEET — design tokens
+  Subject: analog film & camera supply catalog.
+  Palette named after darkroom/film vocabulary.
+*/
+:root{
+  /* --- color --- */
+  --base-black:      #17140F;  /* film base / page background */
+  --base-elevated:   #211D16;  /* card / panel surface */
+  --base-elevated-2: #2B2519;  /* hover surface */
+  --paper:           #F1EAD9;  /* contact-sheet paper */
+  --ink:             #EDE6D6;  /* primary text on dark */
+  --ink-dim:         #B9AF9A;  /* secondary text on dark */
+  --ink-on-paper:    #1C1913;  /* text on paper surface */
+  --accent:          #C97A2B;  /* safelight amber */
+  --accent-bright:   #E4964A;  /* amber, hover/active */
+  --accent-2:        #7A8B6F;  /* darkroom sage — "in stock" */
+  --sold:            #8B4A3D;  /* muted brick — "sold out" */
+  --line:            #3A352B;  /* hairline / sprocket color */
+  --line-on-paper:   #D8CDB3;
+
+  /* --- type --- */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body:    "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:    "Space Mono", ui-monospace, Menlo, monospace;
+
+  --step--1: clamp(0.78rem, 0.75rem + 0.15vw, 0.86rem);
+  --step-0:  clamp(1rem, 0.95rem + 0.25vw, 1.1rem);
+  --step-1:  clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --step-2:  clamp(1.7rem, 1.5rem + 1vw, 2.2rem);
+  --step-3:  clamp(2.4rem, 2rem + 2vw, 3.4rem);
+  --step-4:  clamp(3.2rem, 2.5rem + 3.5vw, 5.2rem);
+
+  /* --- spacing (8px scale) --- */
+  --sp-1: 0.5rem;
+  --sp-2: 0.75rem;
+  --sp-3: 1rem;
+  --sp-4: 1.5rem;
+  --sp-5: 2rem;
+  --sp-6: 3rem;
+  --sp-7: 4.5rem;
+  --sp-8: 7rem;
+
+  /* --- layout --- */
+  --content-max: 78rem;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --sprocket-size: 9px;
+
+  /* --- motion --- */
+  --ease-out: cubic-bezier(.16,.8,.3,1);
+  --dur-fast: 150ms;
+  --dur-med: 320ms;
+}
+
+@media (prefers-color-scheme: light){
+  /* Site is intentionally dark (darkroom concept) regardless of OS theme;
+     token block kept here as an explicit, deliberate choice rather than
+     an oversight. */
+}
